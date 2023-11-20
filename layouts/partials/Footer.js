@@ -24,9 +24,6 @@ const Footer = () => {
                 <b>Landline :</b> 042273148{" "}
               </li>
               <li className="mb-1">
-                <b>Mail :</b> anujchoudhary71@gmail.com{" "}
-              </li>
-              <li className="mb-1">
                 <b>Address :</b> Office number 20, 30th floor , Al moosa tower
                 2, Sheikh Zayed road Dubai, P.O. Box 120780{" "}
               </li>
