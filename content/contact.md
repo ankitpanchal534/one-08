@@ -8,7 +8,6 @@ info:
   contacts:
     - "Office Manager- Anuj Kumar"
     - "Landline:  042273148"
-    - "Mail: [anujchoudhary71@gmail.com](mailto:anujchoudhary71@gmail.com)"
     - "Address: Office number 20, 30th floor ,
       Al moosa tower 2,
       Sheikh Zayed road Dubai,
