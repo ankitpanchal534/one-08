@@ -54,7 +54,8 @@ const App = ({ Component, pageProps }) => {
           content="width=device-width, initial-scale=1, maximum-scale=5"
         />
       </Head>
-      <Component {...pageProps} />
+            <h1>This website is suspended</h1>
+      // <Component {...pageProps} />
     </>
   );
 };
