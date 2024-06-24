@@ -55,7 +55,7 @@ const App = ({ Component, pageProps }) => {
         />
       </Head>
             <h1>This website is suspended</h1>
-      // <Component {...pageProps} />
+{/* <Component {...pageProps} /> */}
     </>
   );
 };
