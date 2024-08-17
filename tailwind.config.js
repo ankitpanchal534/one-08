@@ -50,7 +50,7 @@ module.exports = {
         secondary: theme.colors.default.theme_color.secondary,
         body: theme.colors.default.theme_color.body,
         border: theme.colors.default.theme_color.border,
-        "theme-light": theme.colors.default.theme_color.theme_light,
+        // "theme-light": theme.colors.default.theme_color.theme_light,
       },
       fontSize: {
         base: font_base + "px",

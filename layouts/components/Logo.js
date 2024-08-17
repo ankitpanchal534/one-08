@@ -7,6 +7,26 @@ const Logo = ({ src }) => {
   const { base_url, logo, logo_width, logo_height, logo_text, title } =
     config.site;
 
+
+
+  return <>
+    <Link
+      href={base_url}
+      className="navbar-brand block py-1"
+      style={{
+        height: logo_height.replace("px", "") + "px",
+        width: logo_width.replace("px", "") + "px",
+      }}
+    >
+      {/* One08 Solutions
+       */}
+      One<span className="font-sans">08</span> Solutions
+
+    </Link>
+
+
+
+  </>
   return (
     <Link
       href={base_url}

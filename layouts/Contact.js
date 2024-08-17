@@ -1,5 +1,6 @@
 import config from "@config/config.json";
 import { markdownify } from "@lib/utils/textConverter";
+import OfficeLocationMap from "./components/OfficeLocationMap";
 
 const Contact = ({ data }) => {
   const { frontmatter } = data;
@@ -9,9 +10,9 @@ const Contact = ({ data }) => {
   return (
     <section className="section">
       <div className="container">
-        {markdownify(title, "h1", "text-center font-normal")}
-        <div className="section row pb-0">
-          <div className="col-12 md:col-6 lg:col-7">
+        {markdownify(title, "h1", "text-center ")}
+        <div className="section row pb-0 justify-around">
+          <div className="col-12 md:col-6 gap-2">
             <form
               className="contact-form"
               method="POST"
@@ -56,18 +57,19 @@ const Contact = ({ data }) => {
               </button>
             </form>
           </div>
-          <div className="content col-12 md:col-6 lg:col-5">
-            {markdownify(info.title, "h4")}
+          <div className="content text-gray-100  col-12 md:col-6 lg:col-5">
+            {markdownify(info.title, "h4", "text-red-500 underline ")}
             {markdownify(info.description, "p", "mt-4")}
-            <ul className="contact-list mt-5">
+            <ul className="contact-list  mt-5 font-sans">
               {info.contacts.map((contact, index) => (
                 <li key={index}>
-                  {markdownify(contact, "strong", "text-dark")}
+                  {markdownify(contact, "strong", "text-white")}
                 </li>
               ))}
             </ul>
           </div>
         </div>
+        <OfficeLocationMap />
       </div>
     </section>
   );

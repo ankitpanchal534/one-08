@@ -1,8 +1,8 @@
 ---
 banner:
-  title: Welcome to Medico Magic
-  headline: Your Premier Medical Equipment Trading Company in Dubai
-  content: At Medico Magic, we take pride in being a leading provider of high-quality medical equipment solutions in Dubai and the wider region. Our commitment to excellence, reliability, and innovation sets us apart in the medical equipment trading industry.
+  title: Welcome to One08 Solutions
+  headline: Leading healthcare solutions provider.
+  content: At One08 Solutions, we take pride in being a Leading healthcare solutions provider worldwide. Our commitment to excellence, reliability, and innovation sets us apart in the healthcare industry.
 
   image: /images/medical_equip.jpg
   button:
@@ -11,7 +11,7 @@ banner:
 
 # feature
 feature:
-  title: Why Choose Medico Magic?
+  title: Why Choose One08 Solutions?
   features:
     - name: "Quality Assurance"
       icon: "/images/code.svg"
@@ -35,7 +35,7 @@ feature:
 # services
 services:
   - title: "Our Mission"
-    content: "Our mission at Medico Magic is to empower healthcare providers with the latest cutting-edge medical equipment, enabling them to deliver exceptional care and improve patient outcomes. We aim to contribute significantly to the advancement of the healthcare sector by providing innovative, reliable, and cost-effective solutions."
+    content: "Our mission at One08 Solutions is to empower healthcare providers with the latest cutting-edge medical equipment, enabling them to deliver exceptional care and improve patient outcomes. We aim to contribute significantly to the advancement of the healthcare sector by providing innovative, reliable, and cost-effective solutions."
     images:
       - "/images/hero_image.png"
       - "/images/hero_image1.webp"
@@ -46,33 +46,35 @@ services:
       link: /contact
 
   - title: "Our Team"
-    content: "Meet the dedicated professionals behind Medico Magic. Our team comprises experts in the medical equipment field, including skilled technicians, knowledgeable sales representatives, and customer service specialists. Together, we work tirelessly to ensure that our clients receive top-quality products and exceptional service."
+    content: "Meet the dedicated professionals behind One08 Solutions. Our team comprises experts in the medical equipment field, including skilled technicians, knowledgeable sales representatives, and customer service specialists. Together, we work tirelessly to ensure that our clients receive top-quality products and exceptional service."
     images:
-      - "/images/doctor-nurses.avif"
+      - "/images/doctor-nurses.jpeg"
     button:
       enable: true
       label: Check it out
       link: /contact
 
-  - title: "Partnerships"
-    content: "Medico Magic collaborates with leading global manufacturers and suppliers to bring you a diverse range of high-quality medical equipment. Our partnerships enable us to offer cutting-edge solutions that meet the evolving needs of the healthcare industry."
+  - title: "Customer Support"
+    content: "At One08 Solutions, exceptional customer service is our priority. Our dedicated support team is available to assist you with any inquiries, technical support, or guidance you may require. We strive to ensure a smooth and satisfactory experience throughout your journey with us."
     images:
-      - "/images/service-slide-1.png"
-      - "/images/service-slide-2.png"
-      - "/images/service-slide-3.png"
+      - "/images/contact-us.jpeg"
+      # - "/images/service-slide-2.png"
+      # - "/images/service-slide-3.png"
     button:
       enable: true
       label: Check it out
       link: /contact
 
-  - title: "Community Involvement"
-    content: "We believe in giving back to the community. Medico Magic actively participates in initiatives that support healthcare awareness, education, and charitable endeavors, contributing to the well-being of society.
+  - title: "Our Products"
+    content: "We believe in giving back to the community. One08 Solutions actively participates in initiatives that support healthcare awareness, education, and charitable endeavors, contributing to the well-being of society.
     
     "
     images:
-      - "/images/comm3.jpg"
-      - "/images/comm2.jpg"
-      - "/images/comm1.webp"
+      - "/images/4.jpeg"
+      - "/images/1.jpeg"
+      - "/images/2.jpeg"
+      - "/images/3.jpeg"
+      - "/images/5.jpeg"
     button:
       enable: true
       label: Check it out
@@ -80,15 +82,34 @@ services:
 
 # workflow
 workflow:
-  title: "Customer Support"
-  image: "/images/city-hospital-building.jpg"
-  description: "At Medico Magic, exceptional customer service is our priority. Our dedicated support team is available to assist you with any inquiries, technical support, or guidance you may require. We strive to ensure a smooth and satisfactory experience throughout your journey with us."
+  title: "About Our Company"
+  image: "/images/image1-bg.png"
+  description: "One08 Solutions is a leading Indian medical equipment trading company with a wealth of experience, offering a diverse range of top-notch products and reliable support services. With exclusive distributorship agreements and a strong nationwide presence, we specialize in serving medical equipment manufacturers, ensuring they have access to high-quality supplies to enhance their operations."
+
+# ourTeam
+ourTeam:
+  title: "Meet Our Team"
+  owners:
+    - image: "/images/sumitkansra.webp"
+      name: "Sumit Kansra"
+      location : India
+      designation: "CEO"
+
+    - image: "/images/myphoto.webp"
+      name: "Rahul Lamba"
+      location: United Kingdom
+      designation: "Director"
+
+    - image: "/images/chandan.webp"
+      name: "Chandan Nijhon"
+      location: India
+      designation: "Director"
 
 # call_to_action
 call_to_action:
   title: Ready to get started?
   content: Have a query or need assistance? Click on the button below and Fill out the form below, and our team will promptly get back to you..
-  image: "/images/doctor-consultation.jpg"
+  image: "/images/doctor-consultation.png"
   button:
     enable: true
     label: "Contact Us"

@@ -1,12 +1,12 @@
 {
   "site": {
-    "title": "Medico Magic - Leading Medical Equipment Trading Company in Dubai | High-Quality Solutions",
+    "title": "One08 Solutions - Leading healthcare solutions provider. | High-Quality Solutions",
     "base_url": "/",
     "favicon": "/images/favicon.png",
     "logo": "/images/logo.png",
     "logo_width": "200",
     "logo_height": "48",
-    "logo_text": "Medico Magic"
+    "logo_text": "One08 Solutions"
   },
 
   "settings": {
@@ -24,13 +24,13 @@
   "params": {
     "contact_form_action": "",
     "tag_manager_id": "",
-    "footer_content": "Medico Magic is a trusted provider of cutting-edge medical equipment solutions, dedicated to enhancing healthcare excellence in Dubai and beyond.",
+    "footer_content": "One08 Solutions is a trusted provider of cutting-edge medical equipment solutions, dedicated to enhancing healthcare excellence in India and beyond.",
     "copyright": " "
   },
 
   "metadata": {
-    "meta_author": "Medico Magic",
+    "meta_author": "One08 Solutions",
     "meta_image": "",
-    "meta_description": "Medico Magic is a trusted provider of cutting-edge medical equipment solutions, dedicated to enhancing healthcare excellence in Dubai and beyond"
+    "meta_description": "One08 Solutions is a trusted provider of cutting-edge medical equipment solutions, dedicated to enhancing healthcare excellence in India and beyond"
   }
 }

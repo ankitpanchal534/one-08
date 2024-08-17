@@ -9,8 +9,8 @@ const TermsAndConditions = () => {
     padding: "50px 5% ",
     fontFamily: "Arial, sans-serif",
     lineHeight: "1.6",
-    fontSize: "14px",
-    color: "#333",
+    fontSize: "17px",
+    color: "#888",
   };
 
   return (

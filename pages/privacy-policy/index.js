@@ -9,8 +9,8 @@ const PrivacyPolicy = () => {
     padding: "50px 5% ",
     fontFamily: "Arial, sans-serif",
     lineHeight: "1.6",
-    fontSize: "14px",
-    color: "#333",
+    fontSize: "17px",
+    color: "#888",
   };
 
   return (
@@ -24,7 +24,7 @@ const PrivacyPolicy = () => {
       <div style={privacyPolicyStyle}>
         <h1 style={{ textAlign: "center" }}>Privacy Policy</h1>
         <p>
-          This Privacy Policy explains how Medico Magic ("we," "us," or "our")
+          This Privacy Policy explains how One08 Solutions ("we," "us," or "our")
           collects, uses, discloses, and safeguards the personal information of
           our website visitors and customers.
         </p>

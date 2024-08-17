@@ -8,22 +8,33 @@ import { Autoplay, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 import { getListPage } from "../lib/contentParser";
+import OfficeLocationMap from "@layouts/components/OfficeLocationMap";
 
 const Home = ({ frontmatter }) => {
-  const { banner, feature, services, workflow, call_to_action } = frontmatter;
+  const { banner, feature, services, workflow, call_to_action, ourTeam } = frontmatter;
   const { title } = config.site;
 
   return (
     <Base title={title}>
       {/* Banner */}
-      <section className="section pb-[50px]">
+      <section className="section pb-[50px]"
+
+
+      >
         <div className="container">
           <div className="row text-center">
-            <div className="mx-auto lg:col-10">
-              {/* <h1 className="font-primary font-bold">{banner.title}</h1> */}
-              <h1 className="font-primary font-bold">
+            <div className="mx-auto lg:col-10 pt-42">
+              <div className="w-full  height-animation"
+                style={{
+                  backgroundImage: `url(${banner.image})`,
+                  backgroundBlendMode: 'color-burn',
+                  backgroundColor: 'gray',
+                  backgroundSize: 'cover',
+                }}
+              />
+              <h1 className="font-primary font-bold animate-pulse text-7xl">
                 {" "}
-                Welcome to <span style={{ color: "red" }}>Medico Magic</span>
+                One<span className="font-sans">08</span> Solutions
               </h1>
 
               <h3
@@ -44,14 +55,15 @@ const Home = ({ frontmatter }) => {
                   {banner.button.label}
                 </Link>
               )}
-              <Image
+              {/* <Image
                 className="mx-auto mt-12"
                 src={banner.image}
                 width={750}
                 height={390}
                 alt="banner image"
                 priority
-              />
+              /> */}
+
             </div>
           </div>
         </div>
@@ -61,12 +73,12 @@ const Home = ({ frontmatter }) => {
       <section className="section bg-theme-light">
         <div className="container">
           <div className="text-center">
-            <h2>{markdownify(feature.title)}</h2>
+            <h2 >{markdownify(feature.title)}</h2>
           </div>
           <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
             {feature.features.map((item, i) => (
               <div
-                className="feature-card rounded-xl bg-white p-5 pb-8 text-center"
+                className="feature-card rounded-xl border border-slate-800 hover:bg-slate-900  duration-300 p-5 pb-8 text-center"
                 key={`feature-${i}`}
               >
                 {item.icon && (
@@ -128,13 +140,12 @@ const Home = ({ frontmatter }) => {
 
                 {/* Content */}
                 <div
-                  className={`service-content mt-5 md:mt-0 ${
-                    !isOdd && "md:order-1"
-                  }`}
+                  className={`service-content mt-5 md:mt-0 ${!isOdd && "md:order-1"
+                    }`}
                 >
                   <h2 className="font-bold leading-[40px]">{service?.title}</h2>
-                  <p className="mb-2 mt-4">{service?.content}</p>
-                  {service.button.enable && (
+                  <p className="mb-2 mt-4 text-xl font-extralight max-w-lg">{service?.content}</p>
+                  {/* {service.button.enable && (
                     <Link
                       href={service?.button.link}
                       className="cta-link inline-flex items-center text-primary"
@@ -148,35 +159,51 @@ const Home = ({ frontmatter }) => {
                         alt="arrow"
                       />
                     </Link>
-                  )}
+                  )} */}
                 </div>
               </div>
             </div>
           </section>
         );
       })}
-
+      <OfficeLocationMap />
       {/* workflow */}
       <section className="section pb-0">
-        <div className="mb-8 text-center">
+        <div className="mb-8 text-center w-full flex flex-col items-center">
           {markdownify(
             workflow.title,
             "h2",
-            "mx-auto max-w-[400px] font-bold leading-[44px]"
+            "mx-auto  font-bold leading-[44px]"
           )}
-          {markdownify(workflow.description, "p", "p-3")}
+          {markdownify(workflow.description, "p", "p-3 max-w-screen-lg pb-20")}
         </div>
-        <Image
-          src={workflow.image}
-          alt="workflow image"
-          width={1920}
-          height={296}
-        />
+
+        <div className="max-w-screen-xl w-full m-auto">
+          <div className="w-full flex justify-center py-16">
+            <h2>{ourTeam.title}</h2>
+          </div>
+          <div className="flex gap-2 justify-between  flex-wrap">
+            {ourTeam.owners.map((owner, id) => <div key={id} className="hover:scale-110 duration-300">
+              <Image
+                src={owner.image}
+                alt="owner image"
+                className="rounded-xl grow w-full h-80  xl:max-w-[400px]"
+                width={420}
+                height={296}
+              />
+              <p className="pt-2">{owner.designation}</p>
+              <div className="flex items-end gap-3">
+                <h3>{owner.name},</h3>
+                <span>{owner.location}</span>
+              </div>
+            </div>)}
+          </div>
+        </div>
       </section>
 
       {/* Cta */}
       <Cta cta={call_to_action} />
-    </Base>
+    </Base >
   );
 };
 
