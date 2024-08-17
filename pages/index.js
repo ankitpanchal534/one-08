@@ -42,8 +42,10 @@ const Home = ({ frontmatter }) => {
               {banner.button.enable && (
                 <Link
                   className="btn btn-primary mt-4"
+
                   href={banner.button.link}
                   rel={banner.button.rel}
+
                 >
                   {banner.button.label}
                 </Link>
