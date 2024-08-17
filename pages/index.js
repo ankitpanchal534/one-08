@@ -24,15 +24,8 @@ const Home = ({ frontmatter }) => {
         <div className="container">
           <div className="row text-center">
             <div className="mx-auto lg:col-10 pt-42">
-              <div className="w-full  height-animation"
-                style={{
-                  backgroundImage: `url(${banner.image})`,
-                  backgroundBlendMode: 'color-burn',
-                  backgroundColor: 'gray',
-                  backgroundSize: 'cover',
-                }}
-              />
-              <h1 className="font-primary font-bold animate-pulse text-7xl">
+
+              <h1 className="font-primary font-bold  text-7xl text-red-600">
                 {" "}
                 One<span className="font-sans">08</span> Solutions
               </h1>
@@ -45,7 +38,7 @@ const Home = ({ frontmatter }) => {
               >
                 {banner.headline}
               </h3>
-              <p className="mt-4">{markdownify(banner.content)}</p>
+              <p className="mt-4 font-thin">{markdownify(banner.content)}</p>
               {banner.button.enable && (
                 <Link
                   className="btn btn-primary mt-4"
@@ -55,50 +48,21 @@ const Home = ({ frontmatter }) => {
                   {banner.button.label}
                 </Link>
               )}
-              {/* <Image
+              <Image
                 className="mx-auto mt-12"
                 src={banner.image}
                 width={750}
                 height={390}
                 alt="banner image"
                 priority
-              /> */}
+              />
 
             </div>
           </div>
         </div>
       </section>
 
-      {/* Features */}
-      <section className="section bg-theme-light">
-        <div className="container">
-          <div className="text-center">
-            <h2 >{markdownify(feature.title)}</h2>
-          </div>
-          <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
-            {feature.features.map((item, i) => (
-              <div
-                className="feature-card rounded-xl border border-slate-800 hover:bg-slate-900  duration-300 p-5 pb-8 text-center"
-                key={`feature-${i}`}
-              >
-                {item.icon && (
-                  <Image
-                    className="mx-auto"
-                    src={item.icon}
-                    width={30}
-                    height={30}
-                    alt=""
-                  />
-                )}
-                <div className="mt-4">
-                  {markdownify(item.name, "h3", "h5")}
-                  <p className="mt-3">{item.content}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* services */}
       {services.map((service, index) => {
@@ -111,7 +75,7 @@ const Home = ({ frontmatter }) => {
             <div className="container">
               <div className="items-center gap-8 md:grid md:grid-cols-2">
                 {/* Carousel */}
-                <div className={`service-carousel ${!isOdd && "md:order-2"}`}>
+                <div className={`service-carousel ${!isOdd && "md:order-2"} `}>
                   <Swiper
                     modules={[Autoplay, Pagination]}
                     pagination={
@@ -121,6 +85,7 @@ const Home = ({ frontmatter }) => {
                       delay: 5000,
                       disableOnInteraction: false,
                     }}
+
                     init={service?.images > 1 ? false : true}
                   >
                     {/* Slides */}
@@ -130,7 +95,7 @@ const Home = ({ frontmatter }) => {
                           src={slide}
                           alt=""
                           width={600}
-                          height={500}
+                          height={400}
                           style={{ borderRadius: 20 }}
                         />
                       </SwiperSlide>
@@ -166,6 +131,36 @@ const Home = ({ frontmatter }) => {
           </section>
         );
       })}
+      {/* Features */}
+      <section className="section bg-theme-light">
+        <div className="container">
+          <div className="text-center">
+            <h2 >{markdownify(feature.title)}</h2>
+          </div>
+          <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
+            {feature.features.map((item, i) => (
+              <div
+                className="feature-card rounded-xl border border-slate-800  duration-300 p-5 pb-8 text-center"
+                key={`feature-${i}`}
+              >
+                {item.icon && (
+                  <Image
+                    className="mx-auto"
+                    src={item.icon}
+                    width={30}
+                    height={30}
+                    alt=""
+                  />
+                )}
+                <div className="mt-4">
+                  {markdownify(item.name, "h3", "h5")}
+                  <p className="mt-3">{item.content}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       <OfficeLocationMap />
       {/* workflow */}
       <section className="section pb-0">

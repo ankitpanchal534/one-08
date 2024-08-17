@@ -8,7 +8,7 @@
         "theme_light": "whitesmoke"
       },
       "text_color": {
-        "default": "gray",
+        "default": "black",
         "dark": "#222"
       }
     }

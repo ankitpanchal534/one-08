@@ -3,17 +3,19 @@ h2 {
 }
 body{
   /* background-color: #222222; */
-  background-color: black;
+  /* background-color: black; */
+  background-color: white;
+  /* color: black; */
   /* background-color: #0f172a; */
-  color: white!important;
-  cursor: default;
+  /* color: white!important;
+  cursor: default; */
   
 }
-.height-animation{
+/* .height-animation{
   height: 150px;
   opacity: 50%;
   animation: height 5s infinite;
-}
+} */
 @keyframes height {
 0%{
   height: 150px;
@@ -31,9 +33,9 @@ body{
   height: 150px;
 }
 }
-h1,h2,h3,h4{
+/* h1,h2,h3,h4{
   background: linear-gradient(to right, white, lightgray 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-}
+} */

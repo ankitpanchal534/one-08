@@ -20,7 +20,7 @@ const Header = () => {
   const { enable, label, link } = config.nav_button;
 
   return (
-    <header className="header bg-black shadow-2xl">
+    <header className="header  shadow-xl">
       <nav className="navbar container">
         {/* logo */}
         <div className="order-0">
@@ -50,7 +50,7 @@ const Header = () => {
         </button>
 
         {/* Menu */}
-        <div
+        {/* <div
           id="nav-menu"
           className={`order-3 md:order-1 ${navOpen ? "max-h-[1000px]" : "max-h-0"
             }`}
@@ -105,7 +105,7 @@ const Header = () => {
               </li>
             )}
           </ul>
-        </div>
+        </div> */}
         {enable && (
           <div className="d-flex order-1 ml-auto hidden min-w-[200px] items-center justify-end md:ml-0 md:flex md:order-2">
             <Link className="btn btn-primary z-0 py-[14px]" href={link} rel="">
