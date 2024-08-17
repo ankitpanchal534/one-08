@@ -20,7 +20,7 @@ export default function OfficeLocationMap() {
             <h2 className='-ml-14'>Our offices</h2>
         </div>
         <div className="w-full flex flex-wrap items-center ">
-            {offices.map((office) => <div className='w-1/2 p-2 gap-2 space-y-3 '>
+            {offices.map((office) => <div className='w-full lg:w-1/2  p-2 gap-2 space-y-3 '>
                 <h3>{office.location}</h3>
                 <iframe src={office.iframeLink} width="300" height="350" className={iframeStyle} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>)}

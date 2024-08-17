@@ -65,20 +65,20 @@ services:
       label: Check it out
       link: /contact
 
-  - title: "Our Products"
-    content: "We believe in giving back to the community. One08 Solutions actively participates in initiatives that support healthcare awareness, education, and charitable endeavors, contributing to the well-being of society.
-    
-    "
-    images:
-      - "/images/4.jpeg"
-      - "/images/1.jpeg"
-      - "/images/2.jpeg"
-      - "/images/3.jpeg"
-      - "/images/5.jpeg"
-    button:
-      enable: true
-      label: Check it out
-      link: /contact
+  # - title: "Our Products"
+  #   content: "We believe in giving back to the community. One08 Solutions actively participates in initiatives that support healthcare awareness, education, and charitable endeavors, contributing to the well-being of society.
+
+  #   "
+  #   images:
+  #     - "/images/4.jpeg"
+  #     - "/images/1.jpeg"
+  #     - "/images/2.jpeg"
+  #     - "/images/3.jpeg"
+  #     - "/images/5.jpeg"
+  #   button:
+  #     enable: true
+  #     label: Check it out
+  #     link: /contact
 
 # workflow
 workflow:
@@ -86,13 +86,23 @@ workflow:
   image: "/images/image1-bg.png"
   description: "One08 Solutions is a leading Indian medical equipment trading company with a wealth of experience, offering a diverse range of top-notch products and reliable support services. With exclusive distributorship agreements and a strong nationwide presence, we specialize in serving medical equipment manufacturers, ensuring they have access to high-quality supplies to enhance their operations."
 
+#our products
+ourProducts:
+  title: "Our Products"
+  # products:
+  #   - "/images/4.jpeg"
+  #   - "/images/1.jpeg"
+  #   - "/images/2.jpeg"
+  #   - "/images/3.jpeg"
+  #   - "/images/5.jpeg"
+
 # ourTeam
 ourTeam:
   title: "Meet Our Team"
   owners:
     - image: "/images/sumitkansra.webp"
       name: "Sumit Kansra"
-      location : India
+      location: India
       designation: "CEO"
 
     - image: "/images/myphoto.webp"

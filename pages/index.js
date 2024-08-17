@@ -9,9 +9,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper.min.css";
 import { getListPage } from "../lib/contentParser";
 import OfficeLocationMap from "@layouts/components/OfficeLocationMap";
+import OurProducts from "@layouts/components/OurProducts";
 
 const Home = ({ frontmatter }) => {
-  const { banner, feature, services, workflow, call_to_action, ourTeam } = frontmatter;
+  const { banner, feature, services, workflow, call_to_action, ourTeam, ourProducts } = frontmatter;
   const { title } = config.site;
 
   return (
@@ -65,7 +66,7 @@ const Home = ({ frontmatter }) => {
       </section>
 
 
-
+      <OurProducts ourProducts={ourProducts} />
       {/* services */}
       {services.map((service, index) => {
         const isOdd = index % 2 > 0;
@@ -142,7 +143,7 @@ const Home = ({ frontmatter }) => {
           <div className="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
             {feature.features.map((item, i) => (
               <div
-                className="feature-card rounded-xl border border-slate-800  duration-300 p-5 pb-8 text-center"
+                className="feature-card rounded-xl  border-slate-800  shadow-lg duration-300 p-5 pb-8 text-center"
                 key={`feature-${i}`}
               >
                 {item.icon && (
@@ -179,7 +180,7 @@ const Home = ({ frontmatter }) => {
           <div className="w-full flex justify-center py-16">
             <h2>{ourTeam.title}</h2>
           </div>
-          <div className="flex gap-2 justify-between  flex-wrap">
+          <div className="flex gap-2 justify-between  flex-wrap px-4">
             {ourTeam.owners.map((owner, id) => <div key={id} className="hover:scale-110 duration-300">
               <Image
                 src={owner.image}

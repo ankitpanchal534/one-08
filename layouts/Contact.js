@@ -57,13 +57,13 @@ const Contact = ({ data }) => {
               </button>
             </form>
           </div>
-          <div className="content text-gray-100  col-12 md:col-6 lg:col-5">
+          <div className="content   col-12 md:col-6 lg:col-5">
             {markdownify(info.title, "h4", "text-red-500 underline ")}
             {markdownify(info.description, "p", "mt-4")}
             <ul className="contact-list  mt-5 font-sans">
               {info.contacts.map((contact, index) => (
                 <li key={index}>
-                  {markdownify(contact, "strong", "text-white")}
+                  {markdownify(contact, "strong", "")}
                 </li>
               ))}
             </ul>
